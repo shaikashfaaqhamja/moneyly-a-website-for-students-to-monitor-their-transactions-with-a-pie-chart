@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .income, .payments, .pie-chart {
+    width: 30%;
+  }
+  
+  .income input, .payments input {
+    width: 60%;
+  }
+  
+  .income button, .payments button {
+    margin-top: 10px;
+  }
+  
+  .payments p {
+    margin-top: 20px;
+  }
+  
+  .payment-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .warning {
+    color: red;
+  }

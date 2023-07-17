@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Tracker</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('mon.jpg');
+    }
+    </style>
+  <h1>Payment Tracker</h1>
+  <div class="container">
+    <div class="income">
+      <h2>Income</h2>
+      <p>Enter your monthly income:</p>
+      <input type="number" id="income-input">
+      <button onclick="setIncome()">Set Income</button>
+    </div>
+    <div class="payments">
+      <h2>Payments</h2>
+      <p>Enter your monthly payments:</p>
+      <input type="number" id="payment-input">
+      <button onclick="addPayment()">Add Payment</button>
+      <ul id="payment-list"></ul>
+      <p>Total Payments: $<span id="total-payments">0</span></p>
+      <p id="warning-message"></p>
+    </div>
+    <div class="pie-chart">
+      <h2>Pie Chart</h2>
+      <canvas id="pie-chart-canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
